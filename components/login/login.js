@@ -45,21 +45,3 @@ loginForm.addEventListener("submit", (e) => {
 
     alert("Login successful!");
 });
-
-// SIGNUP VALIDATION
-signupForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-// 
-    const fullName = document.getElementById("signupFullName").value.trim();
-    const email = document.getElementById("signupEmail").value.trim();
-    const password = document.getElementById("signupPassword").value.trim();
-
-    if (fullName === "") return alert("Full name cannot be empty");
-
-    if (email === "") return alert("Email cannot be empty");
-    if (!validator.isEmail(email)) return alert("Enter a valid email");
-
-    if (password === "") return alert("Password cannot be empty");
-
-    alert("Account created!");
-});

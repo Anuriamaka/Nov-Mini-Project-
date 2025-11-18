@@ -113,7 +113,7 @@ body{
 .icon1 {
     height: 30px;
     position: absolute;
-    top: 88px;
+    top: 26px;
     left: 5px;
  
 }
@@ -121,7 +121,15 @@ body{
 .icon2 {
     height: 30px;
     position: absolute;
-     top: 170px;
+     top: 110px;
+    left: 5px;
+}
+
+
+.icon3 {
+    height: 30px;
+    position: absolute;
+     top: 191px;
     left: 5px;
 }
 
@@ -134,7 +142,7 @@ label {
     flex-direction: row;
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 button{

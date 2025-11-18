@@ -31,20 +31,6 @@ signupBtn.addEventListener("click", () => {
     loginForm.classList.add("hidden");
 });
 
-// LOGIN VALIDATION
-loginForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const email = document.getElementById("loginEmail").value.trim();
-    const password = document.getElementById("loginPassword").value.trim();
-
-    if (email === "") return alert("Email cannot be empty");
-    if (!validator.isEmail(email)) return alert("Enter a valid email");
-
-    if (password === "") return alert("Password cannot be empty");
-
-    alert("Login successful!");
-});
 
 // SIGNUP VALIDATION
 signupForm.addEventListener("submit", (e) => {
