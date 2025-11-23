@@ -1,4 +1,4 @@
-import validator from 'https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js'
+// import validator from 'https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js'
 
 // TOGGLE BUTTONS
 const loginBtn = document.getElementById("loginButton");
@@ -29,6 +29,7 @@ signupBtn.addEventListener("click", () => {
 
     signupForm.classList.remove("hidden");
     loginForm.classList.add("hidden");
+    window.location = "http://127.0.0.1:5501/ketty.html"
 });
 
 // LOGIN VALIDATION

@@ -1,0 +1,119 @@
+body{
+    padding-left: 20px;
+    
+}
+
+.sidebar-area {
+    background-color: white;
+    height: 100vh;
+    width: 255px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    border: 2px solid oklch(0.872 0.01 258.338);
+}
+
+.tick-icon{
+    background-color: blue;
+}
+
+.user-details{
+    border: 2px solid oklch(0.872 0.01 258.338);
+    height: 74px;
+    width: 100%;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: none;  /* space between menu buttons */
+    width: 100%;
+    height: 390px;
+    margin: none;
+    border: 2px solid oklch(0.872 0.01 258.338);
+}
+
+.menu-options button {
+    display: flex;
+    align-items: center;
+    gap: 15px;                       /* space between icon and text */
+    background-color: transparent;
+    border: none;
+    padding: 12px 14px;
+    width: 100%;
+    height: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.25s, transform 0.1s;
+}
+
+.menu-options button img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(0);  /* default dark */
+    transition: 0.25s;
+}
+
+.menu-options button:hover {
+    color: white;         
+    transform: translateX(2px);      /* small slide effect */
+}
+
+.menu-options button:hover img {
+    filter: brightness(0) invert(1);  /* turns pure white */
+}
+
+
+.menu-options button.active-menu {
+    background-color: oklch(0.872 0.01 258.338);
+    color: black;
+}
+
+.menu-options button.active-menu img {
+    filter: brightness(0); /* icon becomes black */
+}
+
+footer{
+    border: 2px solid oklch(0.872 0.01 258.338);
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 20px;
+    height: 40px;
+    width: 92%;
+    background-color: yellow;
+    
+}
+
+footer button{
+    border: none;
+    align-items: center;
+    background-color: white;
+    color: red;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: pink;
+    width: 100%;
+}
+
+footer button:hover{
+    background-color: oklch(0.505 0.213 27.518);
+}
+
+footer img{
+    width: 22px;
+    height: 22px;
+    color: red;
+    fill:red;
+}

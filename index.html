@@ -5,29 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/css/global.css">
+    <!-- <link rel="stylesheet" href="./assets/css/global.css"> -->
 
-    <script src="./assets/js/global.js"></script>
+    
 
 </head>
-<body>
+
+<body id="body">
 
 
 
-    <section class="background__container">
-        <div class="glow yellow"></div>
-        <div class="glow purple"></div>
-        <div class="glow blue"></div>
-
-    </section>
+     <!-- <div id="login-container" data-import="/module/login/login.html"></div>
+     <div id="signup-container" data-import= "/module/signup/signup.html"></div> -->
     
-     <nav>
-        <button id="show-login">Login</button>
-        <button id="show-signup">Sign Up</button>
-    </nav>
+    <div data-import="/module/login/login.html"></div>
 
-     <div id="login-container" data-import="components\login\login.html"></div>
-    <div id="signup-container" data-import="components\signup\signup.html"></div>
+      
+ 
+    <script src="./assets/js/global.js"></script>
 
 </body>
 </html>

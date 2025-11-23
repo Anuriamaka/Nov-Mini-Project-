@@ -1,17 +1,3 @@
-// function loadComponent(element) {
-//     const file = element.getAttribute("data-import");
-
-//     fetch(file).then(html => {
-//         element.innerHTML = html;
-
-//         // step 4: find nested imports
-//         const nested = element.querySelectorAll("[data-import]");
-
-//         nested.forEach(loadComponent);
-//     });
-// }
-
-
 // Returns all element descendants of node that match selectors ([data-import]).
 // this returns an array like element that can be looped through
 const componentElements = document.querySelectorAll("[data-import]");
