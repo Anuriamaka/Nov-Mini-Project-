@@ -23,9 +23,16 @@ header{
 }
 
 .user-details{
+    line-height: 5px;
+    display: flex;
     border: 2px solid oklch(0.872 0.01 258.338);
     height: 74px;
     width: 100%;
+}
+
+.user-icon{
+    background-color: blue;
+    
 }
 
 .menu-options {
@@ -90,8 +97,7 @@ footer{
     gap: 20px;
     height: 40px;
     width: 92%;
-    background-color: yellow;
-    
+        
 }
 
 footer button{
@@ -103,7 +109,6 @@ footer button{
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: pink;
     width: 100%;
 }
 
