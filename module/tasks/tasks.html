@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="/module/tasks/tasks.css">
+
+<section class="body">
+
+    <section class="upper__area">
+        <div class="tick__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16">
+                <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                    <polyline points="10.25 2.75 2.75 2.75 2.75 13.25 13.25 13.25 13.25 9.75" />
+                    <polyline points="5.75 7.75 8.25 10.25 14.25 3.75" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="text__area">
+            <h2>Task Management</h2>
+            <p>Manage and track your tasks</p>
+        </div>
+
+    </section>
+
+
+    <div class="tasks__summary__buttons">
+        <button id="tasks__button" class="my_tasks_btn activeBtn"> <img src="/assets/icons/task-icon.svg" alt="">My
+            Tasks</button>
+        <button id="summary__button" class="ai_summary_btn inactiveBtn"> <img src="/assets/icons/AI signal icon.svg"
+                alt="">AI Summary</button>
+    </div>
+
+    <div id="my__tasks__contents">
+
+        <div class="tasks__completed__button">
+            <div class="active__summary">
+                <div class="active__completed">
+                    <h1>0</h1>
+                    <p>Active Tasks</p>
+                </div>
+                <div class="active__completed">
+                    <h1 style="color: green;">0</h1>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+            
+        <button id="openTaskModal" class="add-task-btn">+ Add Task</button>
+
+        <!-- Task Modal -->
+        <div id="taskModal" class="modal">
+            <div class="modal-content">
+                <span id="closeTaskModal" class="close-btn">&times;</span>
+
+                <h2>Create New Task</h2>
+                <p class="sub">Add a new task to your productivity list</p>
+
+                <form id="taskForm">
+                    <label>Title</label>
+                    <input type="text" id="taskTitle" placeholder="Enter task title">
+
+                    <label>Description</label>
+                    <textarea id="taskDesc" placeholder="Add task details..."></textarea>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Priority</label>
+                            <select id="taskPriority">
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>High</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <label>Due Date</label>
+                            <input type="date" id="taskDate">
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button type="button" id="cancelTask">Cancel</button>
+                        <button type="submit" class="create-btn">Create Task</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+        </div>
+
+        <div class="task__count">
+            <img src="/assets/icons/round icon.svg" alt="">
+           <div class="task__count__texts">
+                <p>No tasks yet</p>
+                <p>Click "Add Tasks" to create your first task</p>
+           </div> 
+        </div>
+    </div>
+
+
+    <div id="ai__summary__contents">
+        <div class="ai__powered__task__button">
+            <div>
+                <h4>AI-Powered Task Summary </h4>
+                <p>Get insights and recommendations for your tasks </p>
+            </div>
+            <div>
+                <button class="generate__new"> <img src="/assets/icons/task-icon.svg">Generate New</button>
+            </div>
+        </div>
+
+        <div class="latest__summary__history__buttons">
+            <button id="latest__summary__button" class="latest__summary_btn activeBtn"> <img
+                    src="/assets/icons/star-like-icon.svg" alt="">Latest Summary</button>
+            <button id="history__button" class="history_btn inactiveBtn"> <img src="/assets/icons/time-icon.svg"
+                    alt="">History</button>
+        </div>
+
+        <div id="latest__summary__content">
+            <img src="/assets/icons/AI signal icon.svg" alt="">
+            <h4>No summary generated yet</h4>
+            <p> Click "Generate New" to get AI-powered insights </p>
+        </div>
+
+        <div id="history__content">
+            <img src="/assets/icons/time-icon.svg" alt="">
+            <h4>No summary history</h4>
+            <p> Generate summaries to build up your history</p>
+        </div>
+
+    </div>
+
+
+</section>
+<script src="/module/tasks/tasks.js"></script>

@@ -1,6 +1,136 @@
-<section>
-    <div data-import="/components/buttons/button.html"></div>
-    <div data-import="/components/input/input.html"></div>
-    <h1>Dashboard</h1>
-    <div data-import="components\buttons\button.html"></div>
-</section>
+<link rel="stylesheet" href="/module/dashboard/dashboard.css">
+
+<body>
+
+    <section class="main">
+        <div>
+            <h1>Good Evening, Anuri Amaka</h1>
+            <p>Here's what's happening with your productivity today</p>
+        </div>
+
+        <div class="grid-box">
+            <div class="grid grid1">
+
+                <div class="active-tasks">
+                    <h4>Active Tasks </h4>
+                    <img class="tick" src="/assets/dashboard-icons/tick.svg" alt="tick">
+                </div>
+
+                <div>
+                    <h1>0</h1>
+                    <p>0 Completed</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="grid grid2">
+                <div class="active-tasks">
+                    <h4>Total Expenses</h4>
+                    <img class="dosign" src="/assets/dashboard-icons/dollar.svg" alt="dollar sign">
+                
+                </div>
+
+                <div>
+                    <h1>$0.00</h1>
+                    <p>This period</p>
+                </div>
+
+
+            </div>
+
+            <div class="grid grid3">
+                <div class="active-tasks">
+                    <h4> Total Notes</h4>
+                    <img class="message-icon" src="/assets/dashboard-icons/message.svg" alt="messeage">
+                </div>
+
+                <div>
+                    <h1>0</h1>
+                    <p>Saved notes</p>
+                </div>
+
+
+            </div>
+
+            <div class="grid grid4">
+                <div class="active-tasks">
+                    <h4> Completion Rate</h4>
+                    <img class="zigzag-icon-grid4" src="/assets/dashboard-icons/zigsag arror.svg" alt="zigzag-icon">
+                </div>
+
+                <div>
+                    <h1>0%</h1>
+                    <p>Task Completion</p>
+                </div>
+
+                
+            </div>
+
+            <div class="grid grid5">
+                <img src="/assets/dashboard-icons/clock icon.svg" alt="clock-icon">
+                <h4>Recent Tasks</h4>
+                <img src="/assets/dashboard-icons/tick.svg" alt="tick">
+                <p>No tasks yet</p>
+            </div>
+
+            <div class="grid grid6">
+                <div class="zig-actn"> <img class="zigzag-icon" src="/assets/dashboard-icons/zigsag arror.svg"
+                        alt="zigzag-arrow up">
+                    <h4>Quick Action </h4>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="quick-action-buttons">
+                        <div>
+                            <img class="imgg" src="/assets/dashboard-icons/tick.svg" alt="tick">
+                        </div>
+                        <div class="items">
+                            <h4>Create New Task</h4>
+                            <p>Add a task to your list</p>
+                        </div>
+                    </button>
+
+                    <button class="quick-action-buttons">
+                        <!-- <div>
+                            <img class="imgg" src="/assets/dashboard-icons/dollar.svg" alt="tick">
+                        </div> -->
+                        <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="rgb(68, 94, 238)" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M12 2v20m5-17H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg></div>
+                        <!-- <img src="/assets/dashboard-icons/dollarsign.svg"> -->
+                        <div class="items">
+                            <h4>Track Expense</h4>
+                            <p>Record a new expense</p>
+                        </div>
+                    </button>
+
+                    <button class="quick-action-buttons">
+                        <div>
+                            <img class="imgg" src="/assets/dashboard-icons/message.svg" alt="tick">
+                        </div>
+                        <div class="items">
+                            <h4>Write Note</h4>
+                            <p>Capture your thoughts</p>
+                        </div>
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- <div data-import="/module/sidebar/sidebar.html"></div> -->
+
+
+    <script src="/module/dashboard/dashboard.js"></script>
+</body>

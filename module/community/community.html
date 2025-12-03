@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/module/community/community.css">
+
+<div class="community-container">
+    <h2 class="community-title">Community Board</h2>
+    <p class="community-subtitle">Collaborate with your team</p>
+
+    <div class="post-box">
+        <div class="user-avatar">AA</div>
+        <textarea id="postInput"
+            placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)"
+        ></textarea>
+
+        <button id="postBtn" class="post-btn">
+            <img src="/assets/icons/post arrow up.svg" alt="">
+            <span>Post</span>
+        </button>
+    </div>
+
+    <div id="postsContainer" class="posts-container">
+        <div class="no-posts">
+            <img src="/assets/icons/task-icon.svg" alt="">
+            <p>No posts yet. Be the first to share something!</p>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="/module/community/community.js"></script>

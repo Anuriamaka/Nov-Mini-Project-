@@ -10,6 +10,26 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#sidebar {
+    width: 250px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+#sidebar.collapsed {
+    width: 60px;
+}
+
+#sidebar.collapsed button {
+    text-align: center;
+    font-size: 0; /* hide text */
+}
+
+#sidebar.collapsed button::before {
+    font-size: 16px;
+}
+
+
 header{
     display: flex;
     align-items: center;
@@ -32,13 +52,13 @@ header{
 
 .user-icon{
     background-color: blue;
-    
+
 }
 
 .menu-options {
     display: flex;
     flex-direction: column;
-    gap: none;  /* space between menu buttons */
+    gap: none;  
     width: 100%;
     height: 390px;
     margin: none;
@@ -48,7 +68,7 @@ header{
 .menu-options button {
     display: flex;
     align-items: center;
-    gap: 15px;                       /* space between icon and text */
+    gap: 15px;                      
     background-color: transparent;
     border: none;
     padding: 12px 14px;
@@ -65,17 +85,23 @@ header{
 .menu-options button img {
     width: 22px;
     height: 22px;
-    filter: brightness(0) invert(0);  /* default dark */
+    filter: brightness(0) invert(0);  
     transition: 0.25s;
 }
 
 .menu-options button:hover {
-    color: white;         
-    transform: translateX(2px);      /* small slide effect */
+    color: white;       
+    background-color: rgb(214, 205, 247);  
+    transform: translateX(2px);    
+}
+
+.menu-options button:active {
+    background-color: rgb(123, 126, 136);
+    color: blue;         
 }
 
 .menu-options button:hover img {
-    filter: brightness(0) invert(1);  /* turns pure white */
+    filter: brightness(0) invert(1); 
 }
 
 
@@ -85,7 +111,7 @@ header{
 }
 
 .menu-options button.active-menu img {
-    filter: brightness(0); /* icon becomes black */
+    filter: brightness(0); 
 }
 
 footer{

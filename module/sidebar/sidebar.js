@@ -11,3 +11,9 @@ menuButtons.forEach(btn => {
         btn.classList.add("active-menu");
     });
 });
+
+const collapseBtn = document.getElementById("collapse-btn");
+collapseBtn.onclick = () => {
+    document.getElementById("sidebar").classList.toggle("collapsed");
+};
+

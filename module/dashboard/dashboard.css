@@ -1,0 +1,141 @@
+.main{
+    /* margin-left: 265px; */
+    background-color: #FFFFFFCC;
+}
+
+.grid-box{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);    
+    grid-template-areas: "one two three four"
+                        "five five six six "  ;
+}
+
+.grid{
+    border: 1px solid rgb(30, 41, 59);
+    box-sizing: border-box;    
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.grid:hover{
+    box-shadow: 2px 4px 6px 4px rgb(30, 41, 59) ;
+}
+
+.grid1{
+    grid-area: one;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+}
+
+.active-tasks{
+    display: flex;
+    gap: 30px;
+}
+
+.tick{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(68, 94, 238);
+   
+}
+
+
+.grid2{
+    grid-area: two;
+}
+
+.dosign{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.grid3{
+    grid-area: three;
+}
+
+.message-icon{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(112, 245, 119);
+}
+
+.grid4{
+    grid-area: four;
+}
+
+.zigzag-icon-grid4{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:  rgb(68, 94, 238);
+}
+
+
+.grid5{
+    grid-area: five;
+    height: 250px;
+}
+
+
+.grid6{
+    grid-area: six;
+}
+
+.zig-actn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.zigzag-icon{
+    fill: blue;
+}
+
+.action-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.quick-action-buttons{
+    display: flex;
+    padding-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.quick-action-buttons:hover {
+    background-color: oklch(79.495% 0.09621 258.334);
+
+}
+
+.quick-action-buttons h4:hover{
+    color: white;
+}
+
+.imgg{
+    background-color: oklch(0.872 0.01 258.338);
+    padding: 10px;
+}
+
+.items{
+    padding-left: 20px;
+    align-items: left;
+}
+
